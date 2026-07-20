@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Grimoire</Name>
+  <Repository>hunterreadca/grimoire:latest</Repository>
+  <Registry>https://hub.docker.com/r/hunterreadca/grimoire</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+
+  <Icon>https://raw.githubusercontent.com/hunter-read/grimoire/refs/heads/main/frontend/static/grimoire-logo.png</Icon>
+
+  <WebUI>http://[IP]:[PORT:9481]</WebUI>
+
+  <Overview>Grimoire is a self-hosted organizer for your TTRPG content and campaigns. Manage PDFs, maps, tokens, audio, with full-text search, page viewer, campaigns wiki, and more. Perfect for tabletop RPG enthusiasts.</Overview>
+
+  <Support>https://github.com/hunter-read/grimoire/issues</Support>
+  <Project>https://github.com/hunter-read/grimoire</Project>
+  <TemplateURL>https://raw.githubusercontent.com/Fontler/grimoire-unraid-ca/main/templates/grimoire.xml</TemplateURL>
+  <ReadMe>https://raw.githubusercontent.com/hunter-read/grimoire/main/README.md</ReadMe>
+
+  <Category>Media:Books</Category>
+  <ExtraSearchTerms>ttrpg rpg library pdf maps tokens audio opds</ExtraSearchTerms>
+
+  <Config Name="WebUI" Target="9481" Default="9481" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false"/>
+  
+  <Config Name="Library Path" Target="/library" Default="/mnt/user/media/ttrpg/library" Mode="ro" Description="Path to your TTRPG library folder (books, maps, tokens, audio). Read-only recommended." Type="Path" Display="always" Required="true" Mask="false"/>
+  
+  <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/grimoire" Mode="rw" Description="Persistent data: database, thumbnails, cache. Backup this!" Type="Path" Display="always" Required="true" Mask="false"/>
+  
+  <Config Name="Secret Key" Target="SECRET_KEY" Default="" Description="Required: Long random string for JWT. Generate with: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"/>
+  
+  <Config Name="Workers" Target="WORKERS" Default="2" Description="Number of uvicorn workers. 2-4 typical." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  
+  <Config Name="Base URL" Target="BASE_URL" Default="" Description="Public base URL (e.g. https://grimoire.example.com) for absolute links like OPDS." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  
+  <Config Name="OPDS Enabled" Target="OPDS_ENABLED" Default="true" Description="Enable OPDS catalog. true/false" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+</Container>
