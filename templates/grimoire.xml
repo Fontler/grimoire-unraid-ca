@@ -7,7 +7,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
 
-  <Icon>https://raw.githubusercontent.com/hunter-read/grimoire/refs/heads/main/frontend/static/grimoire-logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/hunter-read/grimoire/0418cd7cc63318ca8d4d10f2577763cc905440ed/frontend/static/grimoire-logo.svg</Icon>
 
   <WebUI>http://[IP]:[PORT:9481]</WebUI>
 

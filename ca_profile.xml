@@ -1,24 +1,21 @@
 <CommunityApplications>
   <!-- Required profile -->
   <Profile>
-    Describe what users will find in this repository, which apps or plugins you maintain, and where they should go for support.  Markdown supported
+    This repository contains the Unraid Community Applications template for **Grimoire** - a self-hosted TTRPG (Tabletop RPG) library manager. 
+    
+    Grimoire lets you organize, search, and read your PDF collection along with maps, tokens, audio, and campaign notes. Features include full-text search, page-by-page PDF viewer, OPDS support, and more.
   </Profile>
-  <!-- Optional icon -->
-  <Icon>https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/main/icon.svg</Icon>
-  <!-- Optional web page -->
-  <WebPage>https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME</WebPage>
-  <!-- Optional support and donation links -->
-  <Forum>https://forums.unraid.net/topic/YOUR_SUPPORT_TOPIC</Forum>
-  <!-- Optional Discord link -->
-  <Discord>https://discord.gg/YOUR_INVITE_CODE</Discord>
-  <!-- Optional donation link -->
-  <DonateLink>https://github.com/sponsors/YOUR_GITHUB_USERNAME</DonateLink>
-  <!-- Optional donation text -->
-  <DonateText>Support this project</DonateText>
-  <!-- Optional photos -->
-  <Photo>URL to any photos</Photo>
-  <!-- You can add multiple photos by adding multiple <Photo> tags -->
-  <!-- Optional videos -->
-  <Video>URL to any video.  Youtube URLs are recommended</Video>
-  <!-- You can add multiple videos by adding multiple <Video> tags -->
+
+  <!-- Icon for the repository (Grimoire logo) -->
+  <Icon>https://raw.githubusercontent.com/hunter-read/grimoire/refs/heads/main/frontend/static/grimoire-logo.png</Icon>
+
+  <!-- Web page for the main project -->
+  <WebPage>https://github.com/hunter-read/grimoire</WebPage>
+
+  <!-- Screenshot of the app -->
+  <Photo>https://raw.githubusercontent.com/Fontler/grimoire-unraid-ca/main/screenshot-grimoire.png</Photo>
+
+  <!-- Optional donation -->
+  <DonateLink>https://github.com/sponsors/hunter-read</DonateLink>
+  <DonateText>Support Grimoire development</DonateText>
 </CommunityApplications>
