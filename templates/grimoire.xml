@@ -7,7 +7,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
 
-  <Icon>https://raw.githubusercontent.com/hunter-read/grimoire/0418cd7cc63318ca8d4d10f2577763cc905440ed/frontend/static/grimoire-logo.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/Fontler/grimoire-unraid-ca/refs/heads/main/icon.png</Icon>
 
   <WebUI>http://[IP]:[PORT:9481]</WebUI>
 
@@ -18,7 +18,7 @@
   <TemplateURL>https://raw.githubusercontent.com/Fontler/grimoire-unraid-ca/main/templates/grimoire.xml</TemplateURL>
   <ReadMe>https://raw.githubusercontent.com/hunter-read/grimoire/main/README.md</ReadMe>
 
-  <Category>Media:Books</Category>
+  <Category>MediaApp:Books</Category>
   <ExtraSearchTerms>ttrpg rpg library pdf maps tokens audio opds</ExtraSearchTerms>
 
   <Config Name="WebUI" Target="9481" Default="9481" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false"/>

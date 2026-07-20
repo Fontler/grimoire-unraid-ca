@@ -7,7 +7,7 @@
   </Profile>
 
   <!-- Icon for the repository (Grimoire logo) -->
-  <Icon>https://raw.githubusercontent.com/hunter-read/grimoire/refs/heads/main/frontend/static/grimoire-logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Fontler/grimoire-unraid-ca/refs/heads/main/icon.png</Icon>
 
   <!-- Web page for the main project -->
   <WebPage>https://github.com/hunter-read/grimoire</WebPage>
